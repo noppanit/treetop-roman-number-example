@@ -1,0 +1,65 @@
+grammar RomanSymbol
+  rule roman_symbol
+    symbol:(i / v / x / l / c / d / m) {
+      def value
+        symbol.value
+      end
+    }
+  end
+
+  rule i
+    "I" {
+      def value
+        1
+      end
+    }
+  end
+
+  rule v
+    "V" {
+      def value
+        5
+      end
+    }
+  end
+
+  rule x
+    "X" {
+      def value
+        10
+      end
+    }
+  end
+
+  rule l
+    "L" {
+      def value
+        50
+      end
+    }
+  end
+
+  rule c
+    "C" {
+      def value
+        100
+      end
+    }
+  end
+
+  rule d
+    "D" {
+      def value
+        500
+      end
+    }
+  end
+
+  rule m
+    "M" {
+      def value
+        1000
+      end
+    }
+  end
+end
